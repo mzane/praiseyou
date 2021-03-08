@@ -1,8 +1,10 @@
-# t
+# Praise you!
+
+Go to [praiseyou.online](https://praiseyou.online) and praise someone who did a great job!
 
 ## Project setup
 ```
-yarn install
+npm install
 ```
 
 ### Compiles and hot-reloads for development
