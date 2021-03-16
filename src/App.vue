@@ -7,6 +7,10 @@
     :praiseMessageEncoded="praiseMessageEncoded"
     :isPreview="isPreview"
   />
+
+  <footer class="page-footer">
+    <p>praiseyou.online proudly powered by <a href="https://matthiaskrumm.name" target="_blank">Matthias Krumm</a></p>
+  </footer>
 </template>
 
 <script>
@@ -206,5 +210,10 @@ select option {
   min-height: 180px;
   min-width: 300px;
   padding: 30px;
+}
+
+.page-footer {
+  font-size: .7em;
+  margin-top: 3em;
 }
 </style>
