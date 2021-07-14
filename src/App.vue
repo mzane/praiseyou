@@ -214,6 +214,9 @@ select option {
 
 .page-footer {
   font-size: .7em;
-  margin-top: 3em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 </style>

@@ -64,7 +64,7 @@
         <button
           type="submit"
           class="btn"
-          @click.prevent="createPraiseHandler"
+          @click.prevent="createPraiseCard"
         >
           Create praise card!
         </button>
@@ -81,7 +81,7 @@
 </template>
 
 <script>
-import { DELIMITER } from "../shared";
+import { DELIMITER } from "@/shared";
 
 export default {
   name: "PraiseCreate",
@@ -102,7 +102,7 @@ export default {
     },
   },
   methods: {
-    createPraiseHandler() {
+    createPraiseCard() {
       if (!this.recipientName) {
         this.$refs['praise-who'].focus();
         return;

@@ -1,6 +1,6 @@
 <template>
   <section class="praise-view">
-    <div v-if="isPreview">Here is what the card looks likes:</div>
+    <div v-if="isPreview">Here is what the card looks like:</div>
 
     <header class="header-page">
       <h1>You got praised!</h1>
@@ -21,6 +21,10 @@
     </div>
 
     <div v-if="isPreview" class="praise-preview-actions">
+<!--      <p>
+        <a href="#" class="btn" @click.prevent="editCard">Edit card</a>
+      </p>-->
+
       <h2>What to do now:</h2>
       <p class="praise-preview-actions--desktop">
         <a href="#" class="btn" @click.prevent="copyToClipboard"
@@ -47,7 +51,7 @@
       <a
         href="#"
         class="btn btn-second"
-        @click.prevent="showPraiseCreateHandler"
+        @click.prevent="createNewCard"
         >Now praise someone else!</a
       >
     </div>
@@ -72,10 +76,14 @@ export default {
     },
   },
   methods: {
-    showPraiseCreateHandler() {
+    createNewCard() {
       window.location.hash = "";
       this.$emit("showpraisecreate");
     },
+    /*editCard() {
+      window.location.hash = "";
+      this.$emit("showpraisecreate");
+    },*/
     copyToClipboard() {
       const copyDiv = this.$refs["praise-url-div"];
       const copyTextarea = this.$refs["praise-url-textarea"];
