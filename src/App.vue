@@ -8,9 +8,9 @@
     :isPreview="isPreview"
   />
 
-  <footer class="page-footer">
+<!--  <footer class="page-footer">
     <p>praiseyou.online proudly powered by <a href="https://matthiaskrumm.name" target="_blank">Matthias Krumm</a></p>
-  </footer>
+  </footer>-->
 </template>
 
 <script>

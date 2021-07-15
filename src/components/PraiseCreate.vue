@@ -29,7 +29,7 @@
               name="praise-text-long"
               ref="praise-text-long"
               class="input"
-              maxlength="80"
+              maxlength="200"
               placeholder="Praise text"
               autocomplete="off"
               v-model="praiseTextLong"
